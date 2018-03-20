@@ -8,7 +8,10 @@ Created on Sun Mar 18 02:03:45 2018
 
 import argparse as arg
 from pathlib import Path
-from funcoes_uteis import *
+
+from data_loaders import verify_data
+from plot_vs_time import plot_vs_time
+from plot_ratio import plot_rpm_motor, plot_rpm_motor_hist
 
 path_parser = arg.ArgumentParser(description='Select the path of the files to be processed: ')
 path_parser.add_argument('-p', '--path')
