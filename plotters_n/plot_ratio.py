@@ -1,11 +1,10 @@
 import numpy as np
 import pandas as pd
 from scipy import stats
-import csv
 import matplotlib.pyplot as plt
 
 from data_cleaners import sanitize_array
-from colors import color_index
+from plotters.colors import color_index
 
 def generate_rpm_motor(data):    
     data_keys = list(data.keys())
@@ -33,7 +32,7 @@ def generate_rpm_motor(data):
     razao_san = sanitize_array(razao[:])
     return matched_times, razao, razao_san, get_word
         
-def plot_rpm_motor(data):
+def plot_ratio(data):
     matched_times, razao, razao_san, get_word = generate_rpm_motor(data)
     razao_label = get_word[0] + '/' + get_word[1]
     print('Razao media '+ razao_label + ' ' + str(razao_san.mean()))
@@ -46,7 +45,7 @@ def plot_rpm_motor(data):
     ax.legend()
     plt.show()
 
-def plot_rpm_motor_hist(data):
+def plot_ratio_hist(data):
     matched_times, razao, razao_san, get_word = generate_rpm_motor(data)
     razao_label = get_word[0] + '/' + get_word[1]
     print('Razao media '+ razao_label + ' ' + str(razao_san.mean()))

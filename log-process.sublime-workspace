@@ -4,24 +4,68 @@
 		"selected_items":
 		[
 			[
-				"plo",
-				"plot_function"
+				"pir",
+				"pir_type"
 			],
 			[
-				"av",
-				"avg"
+				"color",
+				"color_index"
 			],
 			[
-				"fft",
-				"fft_filter"
+				"cho",
+				"choose_plot\t(data_storage.py)"
 			],
 			[
-				"data",
-				"data_cleaners\t(plot_vs_time.py)"
+				"pre",
+				"pretty_list"
 			],
 			[
 				"plot",
-				"plot_fft"
+				"plot_types"
+			],
+			[
+				"pars",
+				"parse_args"
+			],
+			[
+				"vcu",
+				"vcu_types"
+			],
+			[
+				"Pir",
+				"PirR_filtrado\t(log_plotter.py)"
+			],
+			[
+				"PirF",
+				"PirF_filtrado\t(log_plotter.py)"
+			],
+			[
+				"data",
+				"data_loaders\t(log_plotter.py)"
+			],
+			[
+				"t",
+				"type"
+			],
+			[
+				"fi",
+				"filename"
+			],
+			[
+				"av",
+				"avg_r"
+			],
+			[
+				"lae",
+				"label_part"
+			],
+			[
+				"fft",
+				"fft_gen"
+			],
+			[
+				"plo",
+				"plot_function"
 			],
 			[
 				"filter",
@@ -199,78 +243,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "log_plotter.py",
-			"settings":
-			{
-				"buffer_size": 1501,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "data_loaders.py",
-			"settings":
-			{
-				"buffer_size": 2311,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "data_cleaners.py",
-			"settings":
-			{
-				"buffer_size": 694,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "plot_vs_time.py",
-			"settings":
-			{
-				"buffer_size": 2201,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "plot_fft.py",
-			"settings":
-			{
-				"buffer_size": 2540,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "colors.py",
-			"settings":
-			{
-				"buffer_size": 56,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "plot_ratio.py",
-			"settings":
-			{
-				"buffer_size": 2196,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "data_storage.py",
-			"settings":
-			{
-				"buffer_size": 391,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "Packages/Makefile/Make.sublime-build",
 	"build_system_choices":
@@ -513,10 +485,35 @@
 	},
 	"expanded_folders":
 	[
-		"/home/ericonr/Documents/E Racing/GIT/eracing-log_processor"
+		"/home/ericonr/Documents/E Racing/GIT/eracing-log_processor",
+		"/home/ericonr/Documents/E Racing/GIT/eracing-log_processor/__pycache__",
+		"/home/ericonr/Documents/E Racing/GIT/eracing-log_processor/data_man",
+		"/home/ericonr/Documents/E Racing/GIT/eracing-log_processor/plotters_n"
 	],
 	"file_history":
 	[
+		"/home/ericonr/Documents/E Racing/GIT/eracing-log_processor/lists.py",
+		"/home/ericonr/Documents/E Racing/GIT/eracing-log_processor/data_man/data_storage.py",
+		"/home/ericonr/Documents/E Racing/GIT/eracing-log_processor/plotters_n/plot_vs_time.py",
+		"/home/ericonr/Documents/E Racing/GIT/eracing-log_processor/OO_test.py",
+		"/home/ericonr/Documents/E Racing/GIT/eracing-log_processor/data_cleaners.py",
+		"/home/ericonr/Documents/E Racing/GIT/eracing-log_processor/plotters_n/plot_ratio.py",
+		"/home/ericonr/Documents/E Racing/GIT/eracing-log_processor/log_plotter.py",
+		"/home/ericonr/Documents/E Racing/GIT/quick-can-view/src/qcanview.py",
+		"/home/ericonr/Documents/E Racing/GIT/eracing-log_processor/plotters/plot_vs_time.py",
+		"/home/ericonr/Documents/E Racing/GIT/eracing-log_processor/plotters/plot_ratio.py",
+		"/home/ericonr/Documents/E Racing/GIT/eracing-log_processor/plotters/plot_fft.py",
+		"/home/ericonr/Documents/E Racing/GIT/eracing-log_processor/__init__.py",
+		"/home/ericonr/Documents/E Racing/GIT/eracing-log_processor/data_man/__init__.py",
+		"/home/ericonr/Documents/E Racing/GIT/eracing-log_processor/data_storage.py",
+		"/home/ericonr/Documents/E Racing/GIT/eracing-log_processor/data_loaders.py",
+		"/home/ericonr/Documents/E Racing/GIT/eracing-log_processor/plotters/__init__.py",
+		"/home/ericonr/Documents/Programas/GitHub/aluno_exatas/aluno_exatas/fis_exp/classe_principal.py",
+		"/home/ericonr/Documents/Programas/GitHub/aluno_exatas/aluno_exatas/fis_exp/__init__.py",
+		"/home/ericonr/Documents/E Racing/GIT/eracing-log_processor/plot_ratio.py",
+		"/home/ericonr/Documents/E Racing/GIT/eracing-log_processor/colors.py",
+		"/home/ericonr/Documents/E Racing/GIT/eracing-log_processor/plot_fft.py",
+		"/home/ericonr/Documents/E Racing/GIT/eracing-log_processor/plot_vs_time.py",
 		"/home/ericonr/Documents/E Racing/GIT/eracing-log_processor/log-process.sublime-project",
 		"/home/ericonr/Documents/E Racing/GIT/eracing-log_processor/log_processor_main.py",
 		"/home/ericonr/Documents/E Racing/GIT/eracing-log_processor/processamento.py",
@@ -528,7 +525,6 @@
 		"/home/ericonr/.config/sublime-text-3/Packages/User/All Autocomplete.sublime-settings",
 		"/home/ericonr/Documents/E Racing/GIT/PIR_2018_firmware/PIR_2018/makefile-solver.py",
 		"/home/ericonr/Documents/E Racing/GIT/PIR_2018_firmware/PIR_2018/Makefile",
-		"/home/ericonr/Documents/E Racing/GIT/quick-can-view/src/qcanview.py",
 		"/home/ericonr/Documents/E Racing/GIT/PIR_2018_firmware/A/makefile-solver.py",
 		"/home/ericonr/Documents/E Racing/GIT/PIR_2018_firmware/A/Makefile",
 		"/home/ericonr/Documents/E Racing/GIT/PIR_2018_firmware/PIR_2018/STM32F303CCTx_FLASH.ld",
@@ -588,10 +584,8 @@
 		"/home/ericonr/.config/sublime-text-3/Packages/User/PDFTex.sublime-build",
 		"/home/ericonr/Documents/Programas/GitHub/aluno_exatas/setup.py",
 		"/home/ericonr/Documents/Programas/GitHub/aluno_exatas/aluno_exatas/fis_exp/classe_mmq.py",
-		"/home/ericonr/Documents/Programas/GitHub/aluno_exatas/aluno_exatas/fis_exp/__init__.py",
 		"/home/ericonr/OneDrive/UNICAMP/1.Old/2017S2/F229/Exp4/dados_exp2.py",
 		"/home/ericonr/OneDrive/UNICAMP/1.Old/2017S2/F229/Exp5/dadosII.py",
-		"/home/ericonr/Documents/Programas/GitHub/aluno_exatas/aluno_exatas/fis_exp/classe_principal.py",
 		"/home/ericonr/Documents/Programas/GitHub/aluno_exatas/aluno_exatas/dump/main_dump.py",
 		"/home/ericonr/Documents/Programas/GitHub/aluno_exatas/aluno_exatas/calc_num/funcoes_principais.py",
 		"/home/ericonr/Documents/Programas/GitHub/aluno_exatas/aluno_exatas/calc_num/__init__.py",
@@ -624,7 +618,7 @@
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 38.0
 	},
 	"find_in_files":
 	{
@@ -638,6 +632,13 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"plot_type",
+			"csv_path",
+			"verify_data",
+			"word +",
+			"right",
+			"fft_filter",
+			"plot",
 			"DEBu",
 			"main",
 			"abla",
@@ -698,243 +699,8 @@
 	"groups":
 	[
 		{
-			"selected": 4,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "log_plotter.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1501,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1365,
-								1365
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 45.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "data_loaders.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2311,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1506,
-								1506
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "data_cleaners.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 694,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								183,
-								183
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 90.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "plot_vs_time.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2201,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								96,
-								96
-							]
-						],
-						"settings":
-						{
-							"auto_name": "",
-							"syntax": "Packages/Python/Python.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 45.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "plot_fft.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2540,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1916,
-								1916
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 135.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "colors.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 56,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"auto_name": "",
-							"syntax": "Packages/Python/Python.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "plot_ratio.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2196,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								62,
-								39
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "data_storage.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 391,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								19,
-								19
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				}
 			]
 		}
 	],
