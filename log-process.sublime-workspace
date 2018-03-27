@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"razao",
+				"razao_label"
+			],
+			[
+				"word",
+				"word_index"
+			],
+			[
 				"pir",
 				"pir_type"
 			],
@@ -243,6 +251,14 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "data_man/__init__.py",
+			"settings":
+			{
+				"buffer_size": 22,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "Packages/Makefile/Make.sublime-build",
 	"build_system_choices":
@@ -486,18 +502,17 @@
 	"expanded_folders":
 	[
 		"/home/ericonr/Documents/E Racing/GIT/eracing-log_processor",
-		"/home/ericonr/Documents/E Racing/GIT/eracing-log_processor/__pycache__",
-		"/home/ericonr/Documents/E Racing/GIT/eracing-log_processor/data_man",
 		"/home/ericonr/Documents/E Racing/GIT/eracing-log_processor/plotters_n"
 	],
 	"file_history":
 	[
-		"/home/ericonr/Documents/E Racing/GIT/eracing-log_processor/lists.py",
-		"/home/ericonr/Documents/E Racing/GIT/eracing-log_processor/data_man/data_storage.py",
+		"/home/ericonr/Documents/E Racing/GIT/eracing-log_processor/plotters_n/plot_fft.py",
 		"/home/ericonr/Documents/E Racing/GIT/eracing-log_processor/plotters_n/plot_vs_time.py",
-		"/home/ericonr/Documents/E Racing/GIT/eracing-log_processor/OO_test.py",
-		"/home/ericonr/Documents/E Racing/GIT/eracing-log_processor/data_cleaners.py",
 		"/home/ericonr/Documents/E Racing/GIT/eracing-log_processor/plotters_n/plot_ratio.py",
+		"/home/ericonr/Documents/E Racing/GIT/eracing-log_processor/data_man/data_storage.py",
+		"/home/ericonr/Documents/E Racing/GIT/eracing-log_processor/OO_test.py",
+		"/home/ericonr/Documents/E Racing/GIT/eracing-log_processor/lists.py",
+		"/home/ericonr/Documents/E Racing/GIT/eracing-log_processor/data_cleaners.py",
 		"/home/ericonr/Documents/E Racing/GIT/eracing-log_processor/log_plotter.py",
 		"/home/ericonr/Documents/E Racing/GIT/quick-can-view/src/qcanview.py",
 		"/home/ericonr/Documents/E Racing/GIT/eracing-log_processor/plotters/plot_vs_time.py",
@@ -618,7 +633,7 @@
 	],
 	"find":
 	{
-		"height": 38.0
+		"height": 23.0
 	},
 	"find_in_files":
 	{
@@ -632,6 +647,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"get_word",
 			"plot_type",
 			"csv_path",
 			"verify_data",
@@ -699,8 +715,37 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "data_man/__init__.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 22,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								22,
+								22
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
