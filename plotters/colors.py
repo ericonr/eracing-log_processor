@@ -1,0 +1,1 @@
+color_index = ['b', 'orange', 'g', 'r', 'gray', 'black']
