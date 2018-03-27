@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"plo",
+				"plot_ratio\t(log_plotter_main.py)"
+			],
+			[
+				"plot",
+				"plot_vs_time\t(log_plotter_main.py)"
+			],
+			[
 				"razao",
 				"razao_label"
 			],
@@ -26,10 +34,6 @@
 			[
 				"pre",
 				"pretty_list"
-			],
-			[
-				"plot",
-				"plot_types"
 			],
 			[
 				"pars",
@@ -70,10 +74,6 @@
 			[
 				"fft",
 				"fft_gen"
-			],
-			[
-				"plo",
-				"plot_function"
 			],
 			[
 				"filter",
@@ -251,14 +251,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "data_man/__init__.py",
-			"settings":
-			{
-				"buffer_size": 22,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "Packages/Makefile/Make.sublime-build",
 	"build_system_choices":
@@ -501,28 +493,30 @@
 	},
 	"expanded_folders":
 	[
-		"/home/ericonr/Documents/E Racing/GIT/eracing-log_processor",
-		"/home/ericonr/Documents/E Racing/GIT/eracing-log_processor/plotters_n"
+		"/home/ericonr/Documents/E Racing/GIT/eracing-log_processor"
 	],
 	"file_history":
 	[
-		"/home/ericonr/Documents/E Racing/GIT/eracing-log_processor/plotters_n/plot_fft.py",
+		"/home/ericonr/Documents/E Racing/GIT/eracing-log_processor/data_man/data_loaders.py",
+		"/home/ericonr/Documents/E Racing/GIT/eracing-log_processor/plotters/colors.py",
+		"/home/ericonr/Documents/E Racing/GIT/eracing-log_processor/plotters/plot_ratio.py",
+		"/home/ericonr/Documents/E Racing/GIT/eracing-log_processor/plotters/plot_fft.py",
+		"/home/ericonr/Documents/E Racing/GIT/eracing-log_processor/plotters/plot_vs_time.py",
+		"/home/ericonr/Documents/E Racing/GIT/eracing-log_processor/log_plotter_main.py",
+		"/home/ericonr/Documents/E Racing/GIT/eracing-log_processor/plotters/__init__.py",
+		"/home/ericonr/Documents/E Racing/GIT/eracing-log_processor/data_cleaners.py",
 		"/home/ericonr/Documents/E Racing/GIT/eracing-log_processor/plotters_n/plot_vs_time.py",
 		"/home/ericonr/Documents/E Racing/GIT/eracing-log_processor/plotters_n/plot_ratio.py",
 		"/home/ericonr/Documents/E Racing/GIT/eracing-log_processor/data_man/data_storage.py",
+		"/home/ericonr/Documents/E Racing/GIT/eracing-log_processor/plotters_n/plot_fft.py",
+		"/home/ericonr/Documents/E Racing/GIT/eracing-log_processor/data_man/__init__.py",
 		"/home/ericonr/Documents/E Racing/GIT/eracing-log_processor/OO_test.py",
 		"/home/ericonr/Documents/E Racing/GIT/eracing-log_processor/lists.py",
-		"/home/ericonr/Documents/E Racing/GIT/eracing-log_processor/data_cleaners.py",
 		"/home/ericonr/Documents/E Racing/GIT/eracing-log_processor/log_plotter.py",
 		"/home/ericonr/Documents/E Racing/GIT/quick-can-view/src/qcanview.py",
-		"/home/ericonr/Documents/E Racing/GIT/eracing-log_processor/plotters/plot_vs_time.py",
-		"/home/ericonr/Documents/E Racing/GIT/eracing-log_processor/plotters/plot_ratio.py",
-		"/home/ericonr/Documents/E Racing/GIT/eracing-log_processor/plotters/plot_fft.py",
 		"/home/ericonr/Documents/E Racing/GIT/eracing-log_processor/__init__.py",
-		"/home/ericonr/Documents/E Racing/GIT/eracing-log_processor/data_man/__init__.py",
 		"/home/ericonr/Documents/E Racing/GIT/eracing-log_processor/data_storage.py",
 		"/home/ericonr/Documents/E Racing/GIT/eracing-log_processor/data_loaders.py",
-		"/home/ericonr/Documents/E Racing/GIT/eracing-log_processor/plotters/__init__.py",
 		"/home/ericonr/Documents/Programas/GitHub/aluno_exatas/aluno_exatas/fis_exp/classe_principal.py",
 		"/home/ericonr/Documents/Programas/GitHub/aluno_exatas/aluno_exatas/fis_exp/__init__.py",
 		"/home/ericonr/Documents/E Racing/GIT/eracing-log_processor/plot_ratio.py",
@@ -715,37 +709,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "data_man/__init__.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 22,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								22,
-								22
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],

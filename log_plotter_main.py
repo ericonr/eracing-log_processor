@@ -9,9 +9,9 @@ from data_man.lists import *
 from data_man.data_storage import PIR, MotorSpeed
 from data_man.data_loaders import csv_reader
 
-from plotters_n.plot_vs_time import plot_vs_time
-from plotters_n.plot_ratio import plot_ratio, plot_ratio_hist
-from plotters_n.plot_fft import plot_fft
+from plotters.plot_vs_time import plot_vs_time
+from plotters.plot_ratio import plot_ratio, plot_ratio_hist
+from plotters.plot_fft import plot_fft
 
 def close(x, y):
     print("Bye, darling!")

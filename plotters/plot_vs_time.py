@@ -4,55 +4,22 @@ from scipy import stats
 import matplotlib.pyplot as plt
 
 from plotters.colors import color_index
-from data_cleaners import filter_PIR
+from data_man.data_cleaners import filter_PIR
+from data_man.lists import *
 
-def plot_vs_time(data):
+def plot_vs_time(data, ax):
     ci = 0
     
-    data_keys = list(data.keys())
-    print('Data that can be plotted: ' + str(data_keys))
-    get = input('Choose what you want: ').split()
-    get = list(map(int, get))
-    get_word = []
-    for index in get:
-        get_word.append(data_keys[index])
-    
-    fig, ax = plt.subplots()
+    data_keys = [key for key in data.keys()]
+    get_word = receive_list('Data that can be plotted vs time', 'Choose the data you want to plot', data_keys)
+
     for word in get_word:
-        if word == 'VCU_1':
-            print('Plotting motor-speed...')
-            label = 'Motor_speed'
-            ax.scatter(data[word]['time'], data[word]['motor'], c=color_index[ci], label=label)
+        data_to_plot, labels = data[word].choose_plot()
+        for index, array in enumerate(data_to_plot):
+            label = word + ' ' + labels[index]
+            ax.scatter(array[1], array[0], c=color_index[ci], label=label)
             ci += 1
-            print('Motor speed plotted!\n')
-        else:
-            print('Plotting ' + word + '...')
-            choice = input('Choose "r"(right), "l"(left), "b"(both), "a"(avg), "f"(filter): ')
-            if choice == 'r':
-                label = word + ' right'
-                ax.scatter(data[word]['time'], data[word]['right'], c=color_index[ci], label=label)
-                ci += 1
-            elif choice == 'l':
-                label = word + ' left'
-                ax.scatter(data[word]['time'], data[word]['left'], c=color_index[ci], label=label)
-                ci += 1
-            elif choice == 'b':
-                label = word + ' right'
-                ax.scatter(data[word]['time'], data[word]['right'], c=color_index[ci], label=label)
-                ci += 1
-                label = word + ' left'
-                ax.scatter(data[word]['time'], data[word]['left'], c=color_index[ci], label=label)
-                ci += 1
-            elif choice == 'a':
-                label = word + ' average'
-                ax.scatter(data[word]['time'], data[word]['avg_r'], c=color_index[ci], label=label)
-                ci += 1
-            elif choice == 'f':
-                label = word + ' filter'
-                ax.scatter(data[word]['time'], filter_PIR(data[word]['avg_r'][:]), c=color_index[ci], label=label)
-                ci += 1
-            print(word + ' plotted!\n')
     
+    ax.set_title('Time plot')
     ax.set_xlabel('Time [s]')
     ax.legend()
-    plt.show()
