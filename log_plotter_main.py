@@ -1,4 +1,7 @@
+#! /usr/bin/env python3
+
 import argparse as arg
+import click
 import signal
 from pathlib import Path
 
@@ -18,41 +21,50 @@ def close(x, y):
     exit()
 signal.signal(signal.SIGINT, close)
 
-path_parser = arg.ArgumentParser(description='Select the path of the files to be processed: ')
-path_parser.add_argument('-p', '--path')
-path_parser.add_argument('--load-all', dest='all', action='store_const', const=True, default=False)
+@click.command()
+@click.option('--load-all/--load-none', default=False, help='Set if you wish to load all known files into memory.')
+@click.argument('folder_path')
+def cli(load_all, folder_path):
+    """This application runs a command line interface for plotting relevant
+    graphs using data from .csv files in FOLDER_PATH.
+    """
+    try:
+        path = Path(folder_path)
+    except:
+        print('This is not a path.')
+        exit()
+        
+    csv_reader1 = csv_reader(path)
 
-path = Path( path_parser.parse_args().path )
-print('Path to files: ' + str(path))
-load_all = path_parser.parse_args().all
+    data = {}
+    
+    pir_types = ['PirF', 'PirR', 'PirF_filtrado', 'PirR_filtrado']
+    vcu_types = ['VCU_1']
+    
+    for pir in pir_types:
+        data[pir] = PIR(csv_reader1, pir_type=pir)
+    for vcu in vcu_types:
+        data[vcu] = MotorSpeed(csv_reader1)
+    if load_all:
+        for key in data.keys():
+            data[key].verify_loaded()
+    
+    plot_function = {'vs-time':plot_vs_time, 'Ratio':plot_ratio, 'Ratio histogram':plot_ratio_hist, 'Discrete FFT':plot_fft}
+    plots = [key for key in plot_function.keys()]
+    while(1):
+        plot_types = receive_list('\nPlot options', 'Choose which plots you want', plots)
+        length_plot_types = len(plot_types)
+    
+        if length_plot_types == 1:
+            fig, ax = plt.subplots()
+            name = plot_types[0]
+            plot_function[name](data, ax)
+        else:
+            fig, ax = plt.subplots(nrows=len(plot_types))
+            for index, name in enumerate(plot_types):
+                plot_function[name](data, ax[index])
+    
+        fig.show()
+    
 
-csv_reader1 = csv_reader(path)
-data = {}
-
-pir_types = ['PirF', 'PirR', 'PirF_filtrado', 'PirR_filtrado']
-vcu_types = ['VCU_1']
-
-for pir in pir_types:
-    data[pir] = PIR(csv_reader1, pir_type=pir)
-for vcu in vcu_types:
-    data[vcu] = MotorSpeed(csv_reader1)
-if load_all:
-    for key in data.keys():
-        data[key].verify_loaded()
-
-plot_function = {'vs-time':plot_vs_time, 'Ratio':plot_ratio, 'Ratio histogram':plot_ratio_hist, 'Discrete FFT':plot_fft}
-plots = [key for key in plot_function.keys()]
-while(1):
-    plot_types = receive_list('\nPlot options', 'Choose which plots you want', plots)
-    length_plot_types = len(plot_types)
-
-    if length_plot_types == 1:
-        fig, ax = plt.subplots()
-        name = plot_types[0]
-        plot_function[name](data, ax)
-    else:
-        fig, ax = plt.subplots(nrows=len(plot_types))
-        for index, name in enumerate(plot_types):
-            plot_function[name](data, ax[index])
-
-    fig.show()
+cli()
