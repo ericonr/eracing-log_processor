@@ -15,6 +15,8 @@ class csv_reader():
 
     def load_data(self, filename, headers=None):
         file_path = self.path / filename
+        if not file_path.is_file():
+            raise IOError('File "' + str(file_path) + '" doesn\'t exist or is not a file.')
 
         print('Loading data from ' + str(filename) + '...')
         csv_data = np.genfromtxt(file_path, delimiter=';', skip_header=1).T

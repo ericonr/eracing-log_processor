@@ -28,11 +28,7 @@ def cli(load_all, folder_path):
     """This application runs a command line interface for plotting relevant
     graphs using data from .csv files in FOLDER_PATH.
     """
-    try:
-        path = Path(folder_path)
-    except:
-        print('This is not a path.')
-        exit()
+    path = Path(folder_path)
         
     csv_reader1 = csv_reader(path)
 
